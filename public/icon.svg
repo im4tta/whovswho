@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07070b"/>
+      <stop offset="100%" stop-color="#121225"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="184" fill="#0c172d"/>
+  <circle cx="256" cy="256" r="184" stroke="#00ff95" stroke-width="20" stroke-linecap="round" stroke-dasharray="690 466" transform="rotate(38 256 256)"/>
+  <circle cx="256" cy="256" r="184" stroke="#4aa8ff" stroke-width="20" stroke-linecap="round" stroke-dasharray="466 690" transform="rotate(38 256 256)"/>
+  <text x="50%" y="54%" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="150" font-weight="700" fill="#ecf6ff">DC</text>
+</svg>

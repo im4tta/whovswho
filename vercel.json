@@ -1,0 +1,35 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "create-react-app",
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "functions": {
+    "api/export.mjs": {
+      "maxDuration": 30,
+      "memory": 1024
+    },
+    "api/proxy.js": {
+      "maxDuration": 30
+    },
+    "api/ssl.js": {
+      "maxDuration": 15
+    },
+    "api/location.js": {
+      "maxDuration": 10
+    },
+    "api/screenshot.js": {
+      "maxDuration": 30,
+      "memory": 1024
+    },
+    "api/security.js": {
+      "maxDuration": 15
+    },
+    "api/redirects.js": {
+      "maxDuration": 15
+    }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}
